@@ -85,8 +85,9 @@ a:active {
 }
 
 .button:hover {
-    background: #71afe7;
-    color: #404041;
+    background: #00498a;
+    border-color: #0d2e4b;
+    color: #FFF;
 }
 
 .button-secondary {
@@ -95,8 +96,8 @@ a:active {
 }
 
 .button-secondary:hover {
-    background: #7a7979;
-    color: #404041;
+    background: #252525;
+    border-color: #111;
 }
 
 /* ==============
@@ -531,7 +532,7 @@ address {
     .hero-information {
         left: 40%;
         position: absolute;
-        padding: 5em 1em 3em;
+        padding: 5em 1em 3.7em;
         top: 0;
         width: 60%;
     }
