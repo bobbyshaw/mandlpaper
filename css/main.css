@@ -55,6 +55,11 @@ h1,h2,h3 {
     font-weight: 300;
 }
 
+h1 { 
+    text-align: center;
+    font-size: 4em;
+}
+
 a {
     color: #196bb5;
     text-decoration: none;
@@ -102,10 +107,10 @@ a:active {
    ============== */
 
 .main {
-    padding: 1em 0;
-    -webkit-box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
-    -moz-box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
-    box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
+    margin: 1em 0;
+    -webkit-box-shadow: inset 1px 21px 10px -9px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 1px 21px 10px -9px rgba(0,0,0,0.1);
+    box-shadow: inset 1px 20px 20px -20px rgba(0,0,0,0.1);
 }
 
 .main article h1 {
@@ -115,6 +120,12 @@ a:active {
 .main aside {
     color: white;
     padding: 0px 5% 10px;
+}
+
+.cms {
+    max-width: 40em;
+    margin: 5em auto;
+    padding: 0 1em;
 }
 
 .footer-container footer {
@@ -137,9 +148,17 @@ a:active {
 
 .logo {
     background: url('../img/m-and-l-paper-logo.png') no-repeat center left;
+    display: inline-block;
+    font-size: 4em;
     height: 65px;
+    margin: 0.4em 0;
     text-indent: -9999px;
     width: 178px;
+}
+
+.fullwidth {
+    margin-bottom: 8em;
+    width: 100%;
 }
 
 .hero {
@@ -255,11 +274,11 @@ a:active {
 
     .logo {
         float: left;
-        margin-top: 2em;
+        margin: 0.7em 0 0.2em;
     }
 
     .nav {
-        margin-top: 7.5em;
+        margin-top: 6em;
         float: right;
     }
 
@@ -270,9 +289,6 @@ a:active {
 
     .offcut-uses-list-item {
         border-right: 1px solid #e8e8e8;
-        -webkit-box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
-        -moz-box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
-        box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
         display: inline-block;
         padding: 1em 3.3em;
         vertical-align: middle;
@@ -308,7 +324,7 @@ a:active {
     }
 
     .footer-container .nav {
-        float: none;
+        float: left;
         display: inline-block;
         margin: 1em 0;
     }
@@ -391,36 +407,6 @@ a:active {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
 
 .clearfix:before,
 .clearfix:after {
