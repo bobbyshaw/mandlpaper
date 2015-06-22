@@ -1,7 +1,7 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #222;
+    color: #585858;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -16,15 +16,6 @@ html {
     text-shadow: none;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 audio,
 canvas,
 iframe,
@@ -32,6 +23,11 @@ img,
 svg,
 video {
     vertical-align: middle;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
 }
 
 fieldset {
@@ -44,20 +40,9 @@ textarea {
     resize: vertical;
 }
 
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px 'Open Sans', Helvetica, Helvetica Neue, Arial;
+    text-rendering: geometricPrecision;
 }
 
 .wrapper {
@@ -65,59 +50,51 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid #e44d26;
+h1,h2,h3 {
+    color: #196bb5;
+    font-weight: 300;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
+a {
+    color: #196bb5;
+    text-decoration: none;
 }
 
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
+a:hover,
+a:active {
+    text-decoration: underline;
 }
 
-.title {
+.button {
+    background: #196bb5;
+    border: 1px solid #004a80;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 1em;
+    padding: 1em 2em;
+    text-align: center;
+    text-transform: uppercase;
     color: white;
+}
+
+.button-secondary {
+    background: #404040;
+    padding: 0 1em;
 }
 
 /* ==============
     MOBILE: Menu
    ============== */
-
-nav ul {
+.nav {
     margin: 0;
     padding: 0;
-    list-style-type: none;
 }
 
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+.nav-list-item {
+    list-style: none;
+    margin: 0;
 
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 /* ==============
@@ -125,7 +102,10 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 1em 0;
+    -webkit-box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
+    -moz-box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
+    box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
 }
 
 .main article h1 {
@@ -155,108 +135,256 @@ nav a:hover {
    ========================================================================== */
 
 
+.logo {
+    background: url('../img/m-and-l-paper-logo.png') no-repeat center left;
+    height: 65px;
+    text-indent: -9999px;
+    width: 178px;
+}
 
+.hero {
+    background: url('../img/homepage-banner-mobile.jpg') no-repeat top left;
+    background-size: cover;
+    min-height: 15em;
+}
 
+.hero-information {
+    background: rgba(255,255,255,0.5);
+    padding: 1em;
+}
 
+.hero-subtitle {
+    color: #212121;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
+.hero-title {
+    font-size: 4em;
+    line-height: 1;
+    margin: 0;
+}
 
+.hero-copy .button {
+    margin-left: 0;
+    margin-right: 0;
+}
 
+.hero-copy {
+    color: #404040;
+}
 
+.company-description {
+    background: #196bb5;
+    -webkit-box-shadow: inset 1px 21px 29px -9px rgba(0,0,0,0.34);
+    -moz-box-shadow: inset 1px 21px 29px -9px rgba(0,0,0,0.34);
+    box-shadow: inset 1px 21px 29px -9px rgba(0,0,0,0.34);
+    padding: 3em 1em;
+}
 
+.company-description p {
+    color: white;
+    font-weight: 300;
+    margin: 0;
+}
 
+.offcut-uses {
+    margin: 1em;
+}
 
+.offcut-uses h3 {
+    color: #3f3f3f;
+    font-size: 24px;
+}
 
+.offcut-uses-list {
+    padding: 0;
+}
+
+.offcut-uses-list-item {
+    list-style-type: none;
+    margin: 2em 0;
+}
+
+.offcut-uses-list-item h4 {
+    color: #196bb5;
+    font-size: 12px;
+    margin: 0;
+}
+
+.offcut-uses-list-item p {
+    color: #3f3f3f;
+    font-size: 12px;
+    margin: 0;
+}
+
+.offcut-subline {
+    color: #196bb5;
+    text-align: center;
+}
+
+.footer-container {
+    background: #196bb5;
+    -webkit-box-shadow: inset 1px 21px 29px -9px rgba(0,0,0,0.34);
+    -moz-box-shadow: inset 1px 21px 29px -9px rgba(0,0,0,0.34);
+    box-shadow: inset 1px 21px 29px -9px rgba(0,0,0,0.34);
+    padding: 1em;
+}
+
+.footer-container .nav {
+    margin-bottom: 2em;
+}
+
+.footer-container .nav-item {
+    color: #FFF;
+    font-size: 0.8em;
+}
+
+.copyright {
+    font-size: 0.6em;
+    text-align: right;
+}
 
 
 /* ==========================================================================
    Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
+   ========================================================================== */    
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
+    .logo {
         float: left;
+        margin-top: 2em;
     }
 
-    nav {
+    .nav {
+        margin-top: 7.5em;
         float: right;
-        width: 38%;
     }
 
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
+    .nav-list-item {
+        display: inline-block;
+        margin: 0 0.5em;
     }
 
-    .main aside {
+    .offcut-uses-list-item {
+        border-right: 1px solid #e8e8e8;
+        -webkit-box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
+        -moz-box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
+        box-shadow: 10px 10px 5px 5px rgba(255,255,255,1);
+        display: inline-block;
+        padding: 1em 3.3em;
+        vertical-align: middle;
+        width: 20.5%;
+    }
+
+    .offcut-uses-list-item:first-child {
+        padding-left: 0;
+    }
+
+    .offcut-uses-list-item:last-child {
+        border-right: none;
+    }
+
+    .hero {
+        background: url('../img/homepage-banner-medium.jpg') no-repeat top left;
+        min-height: 20em;
+    }
+
+    .company-description p {
+        font-size: 1.5em;
+        line-height: 2;
+        max-width: 870px;
+        margin: 0 auto;
+    }
+
+    .offcut-uses {
+        max-width: 870px;
+    }
+
+    .offcut-uses h3 {
+        font-size: 2em;
+    }
+
+    .footer-container .nav {
+        float: none;
+        display: inline-block;
+        margin: 1em 0;
+    }
+
+    .copyright {
         float: right;
-        width: 28%;
+        margin-top: 2em;
     }
+
 }
-
 @media only screen and (min-width: 1140px) {
+
+    .button {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.8em 3em;
+    }
+
+    .button-secondary {
+        padding: 0 3em;
+    }
+
+    .hero-container {
+        position: relative;
+        background: url('../img/homepage-banner-medium.jpg') no-repeat top left;
+        background-size: cover;
+        min-height: 26.6em;
+    }
+
+    .hero {
+        background: none;
+    }
+
+    .hero-information {
+        left: 40%;
+        position: absolute;
+        padding: 5em 1em 3em;
+        top: 0;
+        width: 60%;
+    }
+
+    .hero-copy {
+        max-width: 40em;
+    }
+
+    .hero-information .button-secondary {
+        clear: both;
+    }
+
+    .hero-information .button {
+        width: 16em;
+    }
+
+    .offcut-uses {
+        margin: 0 auto;
+    }
+
+    .offcut-uses-list-item {
+        padding: 1em 4em;
+        width: 20.5%;
+    }
 
 /* ===============
     Maximal Width
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 870px;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .hero-container {
+        background: url('../img/homepage-banner.jpg') no-repeat top left;
+        background-size: contain;
     }
 }
 
@@ -371,3 +499,5 @@ nav a:hover {
         page-break-after: avoid;
     }
 }
+
+.
