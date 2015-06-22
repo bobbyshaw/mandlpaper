@@ -53,6 +53,7 @@ body {
 h1,h2,h3 {
     color: #196bb5;
     font-weight: 300;
+    line-height: 1;
 }
 
 h1 { 
@@ -67,7 +68,7 @@ a {
 
 a:hover,
 a:active {
-    text-decoration: underline;
+    color: #71afe7;
 }
 
 .button {
@@ -83,9 +84,19 @@ a:active {
     color: white;
 }
 
+.button:hover {
+    background: #71afe7;
+    color: #404041;
+}
+
 .button-secondary {
     background: #404040;
     padding: 0 1em;
+}
+
+.button-secondary:hover {
+    background: #7a7979;
+    color: #404041;
 }
 
 /* ==============
@@ -107,7 +118,7 @@ a:active {
    ============== */
 
 .main {
-    margin: 1em 0;
+    margin: 1em 0 0;
     -webkit-box-shadow: inset 1px 21px 10px -9px rgba(0,0,0,0.1);
     -moz-box-shadow: inset 1px 21px 10px -9px rgba(0,0,0,0.1);
     box-shadow: inset 1px 20px 20px -20px rgba(0,0,0,0.1);
@@ -157,7 +168,6 @@ a:active {
 }
 
 .fullwidth {
-    margin-bottom: 8em;
     width: 100%;
 }
 
@@ -180,8 +190,9 @@ a:active {
 
 .hero-subtitle {
     color: #212121;
-    font-size: 12px;
     font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 0.3em;
     text-transform: uppercase;
 }
 
@@ -191,13 +202,14 @@ a:active {
     margin: 0;
 }
 
-.hero-copy .button {
+.hero-container .button {
     margin-left: 0;
     margin-right: 0;
 }
 
 .hero-copy {
     color: #404040;
+    margin: 0.5em 0 1em 0;
 }
 
 .company-description {
@@ -220,7 +232,7 @@ a:active {
 
 .offcut-uses h3 {
     color: #3f3f3f;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .offcut-uses-list {
@@ -234,19 +246,19 @@ a:active {
 
 .offcut-uses-list-item h4 {
     color: #196bb5;
-    font-size: 12px;
+    font-size: 1em;
     margin: 0;
 }
 
 .offcut-uses-list-item p {
     color: #3f3f3f;
-    font-size: 12px;
+    font-size: 0.9em;
     margin: 0;
 }
 
 .offcut-subline {
     color: #196bb5;
-    text-align: center;
+    margin-bottom: 2em;
 }
 
 .footer-container {
@@ -264,6 +276,10 @@ a:active {
 .footer-container .nav-item {
     color: #FFF;
     font-size: 0.8em;
+}
+
+.footer-container .nav-item:hover {
+    color: #71afe7;
 }
 
 .copyright {
@@ -290,6 +306,93 @@ address {
     font-style: normal;
 }
 
+.cms-products-and-services {
+    margin: 5em auto 2em;
+}
+
+.cms-products-and-services p {
+    text-align: center;
+}
+
+.wrap-choices {
+    text-align: center;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.wrap-choices p {
+    color: #196bb5;
+}
+
+.wrap-choices ul {
+    padding: 0;
+}
+
+.wrap-choice-title {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.wrap-choice {
+    display: inline-block;
+    list-style: none;
+    margin: 0.5em 0 1em;
+}
+
+.image-promo {
+    background: #ebebeb;
+    color: #404041;
+}
+
+.image-promo img {
+    display: inline-block;
+    width: 100%;
+}
+
+.image-promo .promo {
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 1.8;
+    padding: 2em;
+}
+
+.paper-sizes-container {
+    background: #196bb5;
+    -webkit-box-shadow: inset 1px 21px 29px -9px rgba(0,0,0,0.34);
+    -moz-box-shadow: inset 1px 21px 29px -9px rgba(0,0,0,0.34);
+    box-shadow: inset 1px 21px 29px -9px rgba(0,0,0,0.34);
+    color: #FFF;
+    padding: 1em;
+}
+
+.paper-sizes {
+    margin: 2em auto;
+    max-width: 420px;
+}
+
+.paper-sizes .subtitle {
+    font-size: 1.2em;
+}
+
+.common-paper-sizes {
+    padding: 0;
+}
+
+.paper-size {
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 0.5em 0;
+    width: 30%;
+}
+
+.paper-size-description {
+    font-size: 0.6em;
+}
+
+.paper-size:last-child {
+    width: auto;
+}
+
 
 /* ==========================================================================
    Media Queries
@@ -312,11 +415,34 @@ address {
         margin: 0 0.5em;
     }
 
+    .hero-information {
+        margin-left: 10%;
+        width: 60%;
+    }
+
+    .hero-information .button {
+        width: 16em;
+    }
+
+    .button {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.8em 3em;
+    }
+
+    .button-secondary {
+        padding: 0 3em;
+    }
+
+    .offcut-uses {
+        text-align: left;
+    }
+
     .offcut-uses-list-item {
         border-right: 1px solid #e8e8e8;
         display: inline-block;
         padding: 1em 3.3em;
-        vertical-align: middle;
+        vertical-align: top;
         width: 20.5%;
     }
 
@@ -348,6 +474,10 @@ address {
         font-size: 2em;
     }
 
+    .offcut-subline {
+        text-align: center;
+    }
+
     .footer-container .nav {
         float: left;
         display: inline-block;
@@ -356,21 +486,35 @@ address {
 
     .copyright {
         float: right;
+        font-style: italic;
         margin-top: 2em;
     }
 
+    .image-promo img {
+        width: 48.9%;
+    }
+
+    .image-promo .promo {
+        padding: 1em 0em 1em 4em;
+        width: 30%;
+        vertical-align: middle;
+    }
+
+    .wrap-choice {
+        width: 48.9%;
+    }
+
+    .wrap-choice:first-child {
+        margin-right: 0.8em;
+    }
+    
+    .paper-size {
+        font-size: 1.7em;
+    }
+
 }
+
 @media only screen and (min-width: 1140px) {
-
-    .button {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0.8em 3em;
-    }
-
-    .button-secondary {
-        padding: 0 3em;
-    }
 
     .hero-container {
         position: relative;
@@ -397,10 +541,6 @@ address {
 
     .hero-information .button-secondary {
         clear: both;
-    }
-
-    .hero-information .button {
-        width: 16em;
     }
 
     .offcut-uses {
