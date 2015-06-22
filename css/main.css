@@ -161,6 +161,12 @@ a:active {
     width: 100%;
 }
 
+.callout {
+    color: #196bb5;
+    line-height: 1.5;
+    font-size: 1.5em;
+}
+
 .hero {
     background: url('../img/homepage-banner-mobile.jpg') no-repeat top left;
     background-size: cover;
@@ -263,6 +269,25 @@ a:active {
 .copyright {
     font-size: 0.6em;
     text-align: right;
+}
+
+.label {
+    color: #196bb5;
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 0.3em 0 0;
+}
+
+.cms-contact p {
+    margin: 3em 0;
+}
+
+.cms-contact a {
+    color: #000;
+}
+
+address {
+    font-style: normal;
 }
 
 
