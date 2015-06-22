@@ -158,13 +158,14 @@ a:active {
 
 
 .logo {
-    background: url('../img/m-and-l-paper-logo.png') no-repeat center left;
+    background: url('../img/m-and-l.svg') no-repeat center left;
     display: inline-block;
     font-size: 4em;
-    height: 65px;
-    margin: 0.4em 0;
+    height: 90px;
+    margin: 0.2em 0;
+    margin-left: -8px;
     text-indent: -9999px;
-    width: 178px;
+    width: 200px;
 }
 
 .fullwidth {
@@ -402,7 +403,7 @@ address {
 
     .logo {
         float: left;
-        margin: 0.7em 0 0.2em;
+        margin: 0.5em 0 0.2em;
     }
 
     .nav {
