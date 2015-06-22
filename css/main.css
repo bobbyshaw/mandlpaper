@@ -91,6 +91,7 @@ a:active {
 }
 
 .button-secondary {
+    border-color: #111;
     background: #404040;
     padding: 0 1em;
 }
@@ -163,8 +164,7 @@ a:active {
     display: inline-block;
     font-size: 4em;
     height: 90px;
-    margin: 0.2em 0;
-    margin-left: -8px;
+    margin: 0.4em 0;
     text-indent: -9999px;
     width: 200px;
 }
@@ -408,7 +408,7 @@ address {
     }
 
     .nav {
-        margin-top: 6em;
+        margin-top: 6.2em;
         float: right;
     }
 
