@@ -5,3 +5,5 @@ statamic/_cache/*
 statamic/_logs/*
 !statamic/_logs/index.html
 statamic/settings.yaml
+statamic/_config/settings.yaml
+statamic/_config/users/admin.yaml
