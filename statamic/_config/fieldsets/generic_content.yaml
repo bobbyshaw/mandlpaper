@@ -1,0 +1,33 @@
+title: Standard Text and Image Page
+
+fields:
+  introduction:
+    display: Introduction
+    required: false
+    instructions: This text appears below the main page title.
+  blue_callout:
+    display: Blue Text
+    required: false
+    instructions: This text appears in blue on the page and acts as feature text.
+  further_description:
+    display: Further Description
+    required: false
+    instructions: Text that appears below the blue-highlighted text.
+  image:
+    display: Image
+    type: file
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img/
+    required: false
+    instructions: This is the full-width image.  It should be at least 1500 pixels wide.
+  small_image:
+    display: Small Image
+    type: file
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img/
+    required: false
+    instructions: This should be a smaller version of the above image which we will show to people browsing on a smaller device.
+  image_description:
+    display: Image Description
+    required: false
+    instructions: The description of the image is used for Google and blind people.
