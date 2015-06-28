@@ -1,0 +1,39 @@
+<div class="cms cms-{{ title|lower|slugify }}">
+    <h1>{{ title }}</h1>
+
+    <p>{{ introduction }}</p>
+</div>
+
+<div class="wrap-choices">
+    <p class="wrap-choice-title">{{ wrap_choice_title }}</p>
+    <ul>
+        {{ wrap_choices }}
+        <li class="wrap-choice">
+            <img src="{{ wrap_choice_image }}" alt="{{ wrap_choice_image_description }}" />
+            <p>{{ wrap_choice_image_description }}</p>
+        </li>
+        {{ /wrap_choices }}
+    </ul>
+</div>
+<div class="image-promo">
+    <img src="{{ wrap_machine_image }}" alt="{{ wrap_machine_image_description }}" />
+    <p class="promo">
+        {{ wrap_machine_image_description }}
+    </p>
+</div>
+
+<div class="paper-sizes-container">
+    <div class="paper-sizes">
+        <p class="subtitle">{{ wrap_sizes_introduction }}</p>
+
+        <ul class="common-paper-sizes">
+            {{ wrap_sizes }}
+                <li class="paper-size">{{ wrap_size }}</li>
+            {{ /wrap_sizes }}
+            <li class="paper-size">{{ kraft_wrap_size }} <span class="paper-size-description">{{ kraft_wrap_description }}</span></li>
+        </ul>
+
+        <p>{{ custom_services }}</p>
+</div>
+
+{{ content }}
