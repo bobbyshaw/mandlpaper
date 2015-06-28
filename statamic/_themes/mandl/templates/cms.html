@@ -1,8 +1,4 @@
----
-_fieldset: generic_content
----
-
-<div class="cms cms-{{ title | slugify }}">
+<div class="cms cms-{{ title|lower|slugify }}">
     <h1>{{ title }}</h1>
 
     {{ introduction }}
