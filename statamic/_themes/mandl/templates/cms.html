@@ -1,0 +1,17 @@
+---
+_fieldset: generic_content
+---
+
+<div class="cms cms-{{ title | slugify }}">
+    <h1>{{ title }}</h1>
+
+    {{ introduction }}
+
+    <p class="callout">{{ blue_callout }}</p>
+
+    {{ further_description }}
+
+    {{ content }}
+</div>
+
+<img class="fullwidth" src="{{ small_image }}" srcset="{{ small_image }} 300w, {{ image }} 1000w" alt="{{ image_description }}" />
