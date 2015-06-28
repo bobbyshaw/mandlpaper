@@ -1,7 +1,7 @@
 # Statamic files #
 ######################
-_cache/*
-!_cache/index.html
-_logs/*
-!_logs/index.html
-settings.yaml
+statamic/_cache/*
+!statamic/_cache/index.html
+statamic/_logs/*
+!statamic/_logs/index.html
+statamic/settings.yaml
