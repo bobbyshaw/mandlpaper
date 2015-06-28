@@ -1,0 +1,70 @@
+title: Products and Services Page
+
+fields:
+    content:
+        type: hidden
+    introduction:
+        display: Introduction
+        required: false
+        instructions: This text appears below the main page title.
+        type: textarea
+    wrap_choice_title:
+        display: Wrap Choice Title
+        required: false
+        instructions: Blue title above the two wrap images.
+    wrap_choices:
+        display: Wrap Choices
+        type: grid
+        starting_rows: 2
+        min_rows: 2
+        fields:
+            wrap_choice_image:
+                display: Wrap Choice Image
+                type: file
+                allowed: [png, gif, jpg, jpeg]
+                destination: assets/img/
+                required: false
+                instructions: This is an image of one of the wrap choices. Main requirement is that these images are the same size as each other.  Current size is 586 x 217 pixels.
+                width: 50%
+            wrap_choice_image_description:
+                display: Wrap Choice Image Description
+                required: false
+                instructions: This text appears below the wrap choice image.
+    wrap_machine_image:
+        display: Wrap Machine Image
+        type: file
+        allowed: [png, gif, jpg, jpeg]
+        destination: assets/img/
+        required: false
+        instructions: This is the wrap machine image. (Currently 587 x 394 pixels).
+    wrap_machine_image_description:
+        display: Wrap Machine Image Description
+        required: false
+        instructions: Text to show next to the wrap machine photo.
+    wrap_sizes_introduction:
+        display: Wrap Sizes Introduction:
+        required: false
+        instructions: Line of text before the wrap sizes that are available.
+    wrap_sizes:
+        display: Wrap Sizes
+        type: grid
+        starting_rows: 6
+        min_rows: 3
+        fields:
+            wrap_size:
+                display: Wrap Size
+                required: false
+                instructions: Wrap size, e.g. 10 x 15"
+    kraft_wrap_size:
+        display: Kraft Wrap Size
+        required: false
+        instructions: Last size is the wrap size that Kraft comes in, e.g. 30 x 40"
+    kraft_wrap_description:
+        display: Kraft Wrap Size Description
+        required: false
+        instructions: Text next to kraft warp size explaining what it is.
+    custom_services:
+        display: Custom/Other Services Description
+        required: false
+        type: textarea
+        instructions: Text beneath the wrap sizes explaining that custom sizes and other services are available.
