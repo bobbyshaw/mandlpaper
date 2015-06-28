@@ -1,49 +1,33 @@
 ---
 title: Products and Services
+introduction: 'At M & L Paper we are committed to providing a superior quality product using  prime reels which ensures consistency of sheet size throughout the parcel.'
+wrap_choice_title: 'We offer a choice of outer wrap:'
+wrap_choices:
+  -
+    wrap_choice_image: assets/img/sack-kraft.jpg
+    wrap_choice_image_description: Strong Brown Wet Strength Sack Kraft
+  -
+    wrap_choice_image: assets/img/white-polythene.jpg
+    wrap_choice_image_description: Sturdy White Polythene
+wrap_machine_image: assets/img/wrap-machine.jpg
+wrap_machine_image_description: Once wrapped parcels are stacked on pallets before being securely strapped and shrink wrapped for transportation.
+wrap_sizes_introduction: 'Some of our more popular sizes are:'
+wrap_sizes:
+  -
+    wrap_size: 10 x 15"
+  -
+    wrap_size: 15 x 20"
+  -
+    wrap_size: 17 x 20"
+  -
+    wrap_size: 20 x 20"
+  -
+    wrap_size: 20 x 24"
+  -
+    wrap_size: 20 x 30"
+kraft_wrap_size: 30 x 40"
+kraft_wrap_description: is available in kraft wrap.
+custom_services: We are able to produce other sizes as required. In addition to the above we provide a precision cut service either ream wrapped or bulk packed on pallets.
+_template: products-and-services
+_fieldset: products_and_services
 ---
-
-<div class="cms cms-products-and-services">
-    <h1>Products and Services</h1>
-
-    <p>At M &amp; L Paper we are committed to providing a superior quality product using  prime reels which ensures consistency of sheet size throughout the parcel.</p>
-</div>
-
-<div class="wrap-choices">
-    <p class="wrap-choice-title">We offer a choice of outer wrap:</p>
-    <ul>
-        <li class="wrap-choice">
-            <img src="img/sack-kraft.jpg" alt="Strong Brown Wet Strength Sack Kraft" />
-            <p>Strong Brown Wet Strength Sack Kraft</p>
-        </li>
-        <li class="wrap-choice">
-            <img src="img/white-polythene.jpg" alt="Sturdy White Polythene" />
-            <p>Study White Polythene</p>
-        </li>
-    </ul>
-</div>
-<div class="image-promo">
-    <img src="img/wrap-machine.jpg" alt="Shrink Wrap Machine" />
-    <p class="promo">
-        Once wrapped parcels are stacked on pallets before being securely strapped
-        and shrink wrapped for transportation.
-    </p>
-</div>
-
-<div class="paper-sizes-container">
-    <div class="paper-sizes">
-        <p class="subtitle">Some of our more popular sizes are:</p>
-
-        <ul class="common-paper-sizes">
-            <li class="paper-size">10 x 15"</li>
-            <li class="paper-size">15 x 20"</li>
-            <li class="paper-size">17 x 20"</li>
-            <li class="paper-size">20 x 20"</li>
-            <li class="paper-size">20 x 24"</li>
-            <li class="paper-size">20 x 30"</li>
-            <li class="paper-size">30 x 40" <span class="paper-size-description">is available in kraft wrap.</span></li>
-        </ul>
-
-        <p>We are able to produce other sizes as required. In addition to the above
-        we provide a precision cut service either ream wrapped or bulk packed on pallets.</p>
-    </div>
-</div>
