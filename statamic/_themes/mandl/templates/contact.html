@@ -3,18 +3,18 @@
 
     {{ if email }}
     <p>
-        <span class="label">Email us at:</span> <a href="mailto:{{ email }}">{{ email }}</a>
+        <span class="label">Email us at:</span> <a href="mailto:{{ email }}"><span itemprop="email">{{ email }}</span></a>
     </p>
     {{ endif }}
 
     {{ if address }}
     <span class="label">Address:<br/></span>
-    <address>{{ address }}</address>
+    <address><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ address }}</span></address>
     {{ endif }}
 
     <p>
         {{ if telephone }}
-        <span class="label">Tel:</span> <a href="tel:{{ telephone }}">{{ telephone }}</a><br/>
+        <span class="label">Tel:</span> <a href="tel:{{ telephone }}"><span itemprop="telephone">{{ telephone }}</span></a><br/>
         {{ endif }}
         {{ if fax }}
         <span class="label">Fax:</span> {{ fax }}

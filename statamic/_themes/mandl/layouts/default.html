@@ -23,28 +23,30 @@
         <script src="{{ theme:js src="vendor/picturefill.min.js" }}" async></script>
     </head>
     <body>
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <a href="{{ _site_root }}"><span class="logo">M and L Paper</span></a>
-                <ul class="nav">
-                    {{ nav from="/" max_depth="1" }}
-                        <li class="nav-list-item">
-                            <a href="{{ url }}" class="nav-item">
-                                {{ title }}
-                            </a>
-                        </li>
-                    {{ /nav }}
-                </ul>
-            </header>
-        </div>
+        <span itemscope itemtype="http://schema.org/LocalBusiness">
+            <div class="header-container">
+                <header class="wrapper clearfix">
+                    <a href="{{ _site_root }}"><span class="logo" itemprop="name">M and L Paper</span></a>
+                    <ul class="nav">
+                        {{ nav from="/" max_depth="1" }}
+                            <li class="nav-list-item">
+                                <a href="{{ url }}" class="nav-item">
+                                    {{ title }}
+                                </a>
+                            </li>
+                        {{ /nav }}
+                    </ul>
+                </header>
+            </div>
 
-        <div class="main-container">
-            <div class="main clearfix">
+            <div class="main-container">
+                <div class="main clearfix">
 
-                {{ layout_content }}
+                    {{ layout_content }}
 
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
+                </div> <!-- #main -->
+            </div> <!-- #main-container -->
+        </span>
 
         <div class="footer-container">
             <footer class="wrapper clearfix">
@@ -60,7 +62,7 @@
                 <p class="copyright">&copy; Copyright {{ current_date format="Y"}} M &amp; L Paper Limited
             </footer>
         </div>
-        
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
