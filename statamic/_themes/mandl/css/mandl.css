@@ -56,7 +56,7 @@ h1,h2,h3 {
     line-height: 1;
 }
 
-h1 { 
+h1 {
     text-align: center;
     font-size: 4em;
 }
@@ -306,6 +306,7 @@ a:active {
 
 address {
     font-style: normal;
+    white-space: pre-line;
 }
 
 .cms-products-and-services {
@@ -398,7 +399,7 @@ address {
 
 /* ==========================================================================
    Media Queries
-   ========================================================================== */    
+   ========================================================================== */
 
 @media only screen and (min-width: 768px) {
 
@@ -509,7 +510,7 @@ address {
     .wrap-choice:first-child {
         margin-right: 0.8em;
     }
-    
+
     .paper-size {
         font-size: 1.7em;
     }
