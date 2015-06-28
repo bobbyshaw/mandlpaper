@@ -1,18 +1,21 @@
-title: Standard Text and Image Page
+title: Standard Text and Image Page, e.g. About Us
 
 fields:
   introduction:
     display: Introduction
     required: false
     instructions: This text appears below the main page title.
+    type: textarea
   blue_callout:
     display: Blue Text
     required: false
     instructions: This text appears in blue on the page and acts as feature text.
+    type: textarea
   further_description:
     display: Further Description
     required: false
     instructions: Text that appears below the blue-highlighted text.
+    type: textarea
   image:
     display: Image
     type: file
