@@ -1,0 +1,59 @@
+title: Home Page
+
+fields:
+    content:
+        type: hidden
+    hero_subtitle:
+        display: Hero Subtitle
+        required: false
+        instructions: This is the tagline above the main hero title
+    hero_title:
+        display: Hero Title
+        required: false
+        instructions: Main homepage title
+    hero_description:
+        display: Hero Description
+        required: false
+        instructions: Description beneath title on the home page.
+    primary_button_text:
+        display: Primary Button Text
+        required: false
+        instructions: Blue button text
+    primary_botton_link:
+        display: Primary Button Link
+        required: false
+        instructions: Page to go to when clicking on the blue button.
+    secondary_button_text:
+        display: Secondary Button Text
+        required: false
+        instructions: Grey button text
+    secondary_button_link:
+        display: Secondary Button Link
+        required: false
+        instructions: Page to go to when clicking on the grey button.
+    company_description:
+        display: Company Description
+        required: false
+        instructions: Description of company that is shown in the big blue bar.
+    offcut_uses_title:
+        display: Offcut Uses Title
+        required: false
+        instructions: Title above the different offcut uses.
+    offcut_uses:
+        display: Offcut Uses
+        type: grid
+        starting_rows: 3
+        min_rows: 3
+        fields:
+            offcut_use_title:
+                display: Offcut Use Title
+                width: 50%
+                instructions: Blue heading of an offcut use.
+            offcut_use_description:
+                display: Offcut Use Description
+                instructions: Short description of offcut use.
+    offcut_uses_subline:
+        display: Offcut Uses Outro Text
+        required: false
+        instructions: Blue text shown below offcut uses.
+        

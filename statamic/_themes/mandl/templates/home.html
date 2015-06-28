@@ -1,0 +1,31 @@
+<div class="hero-container">
+    <div class="hero"></div>
+    <div class="hero-information">
+        <p class="hero-subtitle">{{ hero_subtitle }}</p>
+        <h2 class="hero-title">{{ hero_title }}</h2>
+        <p class="hero-copy">{{ hero_description }}</p>
+
+        <a class="button button-primary" href="{{ primary_button_link }}">{{ primary_button_text }}</a>
+
+        <a class="button button-secondary" href="{{ secondary_button_link }}">{{ secondary_button_text }}</a>
+    </div>
+</div>
+
+<div class="company-description">
+    <p>{{ company_description }}</p>
+</div>
+
+<div class="offcut-uses">
+    <h3>{{ offcut_uses_title }}</h3>
+
+    <ul class="offcut-uses-list">
+        {{ offcut_uses }}
+        <li class="offcut-uses-list-item">
+            <h4>{{ offcut_use_title }}</h4>
+            <p>{{ offcut_use_description }}</p>
+        </li>
+        {{ /offcut_uses }}
+    </ul>
+
+    <p class="offcut-subline">{{ offcut_uses_subline }}</p>
+</div>
