@@ -1,0 +1,53 @@
+<div class="cms cms-{{ title|lower|slugify }}">
+    <h1>{{ title }}</h1>
+
+    {{ if email }}
+    <p>
+        <span class="label">Email us at:</span> <a href="mailto:{{ email }}">{{ email }}</a>
+    </p>
+    {{ endif }}
+
+    {{ if address }}
+    <span class="label">Address:<br/></span>
+    <address>
+        {{ address }}
+        M &amp; L Paper Limited<br/>
+        Units 25-29 Lordswood Industrial Estate<br/>
+        Revenge Road<br/>
+        Chatham<br/>
+        Kent<br/>
+        ME5 8UD<br/>
+    </address>
+    {{ endif }}
+
+    <p>
+        {{ if telephone }}
+        <span class="label">Tel:</span> <a href="tel:{{ telephone }}">{{ telephone }}</a><br/>
+        {{ endif }}
+        {{ if fax }}
+        <span class="label">Fax:</span> {{ fax }}
+        {{ endif }}
+    </p>
+
+    {{ if accounts_telephone or accounts_email }}
+    <p>
+        <span class="label">Accounts</span><br/>
+        {{ if accounts_telephone }}
+        <span class="label">Tel:</span> <a href="tel:{{ accounts_telephone }}">{{ accounts_telephone }}</a><br/>
+        {{ endif }}
+        {{ if accounts_email }}
+        <span class="label">Email:</span> <a href="mailto:{{ accounts_email }}">{{ accounts_email }}</a>
+        {{ endif }}
+    </p>
+    {{ endif }}
+
+    {{ if bottom_text }}
+    <p>{{ bottom_text }}</p>
+    {{ endif }}
+
+    {{ content }}
+</div>
+
+{{ if image }}
+<img class="fullwidth" src="{{ small_image }}" srcset="{{ small_image }} 300w, {{ image }} 1000w" alt="{{ image_description }}" />
+{{ endif }}

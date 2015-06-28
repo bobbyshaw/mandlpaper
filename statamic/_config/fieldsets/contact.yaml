@@ -1,0 +1,51 @@
+title: Contact Page
+fields:
+    introduction:
+        display: Introduction
+        required: false
+        instructions: Optional introductory text
+        type: textarea
+    email:
+        display: Email Address
+        required: false
+        instructions: Main contact email Address
+    address:
+        display: Address
+        required: false
+    telephone:
+        display: Phone Number
+        required: false
+        instructions:  Main phone number
+    fax:
+        display: Fax Number
+        required: false
+        instructions: Main fax number
+    accounts_telephone:
+        display: Accounts Phone Number
+        required: false
+    accounts_email:
+        display: Accounts Email
+        required: false
+    bottom_text:
+        display: Outro Text
+        required: false
+        instructions: Add to text to the bottom of the page if required.
+        type: textarea
+    image:
+        display: Image
+        type: file
+        allowed: [png, gif, jpg, jpeg]
+        destination: assets/img/
+        required: false
+        instructions: This is the full-width image.  It should be at least 1500 pixels wide.
+    small_image:
+        display: Small Image
+        type: file
+        allowed: [png, gif, jpg, jpeg]
+        destination: assets/img/
+        required: false
+        instructions: This should be a smaller version of the above image which we will show to people browsing on a smaller device.
+    image_description:
+        display: Image Description
+        required: false
+        instructions: The description of the image is used for Google and blind people.
