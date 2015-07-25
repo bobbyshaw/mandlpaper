@@ -19,7 +19,7 @@ fields:
         display: Primary Button Text
         required: false
         instructions: Blue button text
-    primary_botton_link:
+    primary_button_link:
         display: Primary Button Link
         required: false
         instructions: Page to go to when clicking on the blue button.
@@ -56,4 +56,3 @@ fields:
         display: Offcut Uses Outro Text
         required: false
         instructions: Blue text shown below offcut uses.
-        
