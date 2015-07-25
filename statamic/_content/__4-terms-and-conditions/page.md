@@ -1,7 +1,7 @@
 ---
 title: Terms and Conditions
-image: assets/img/about-us-machine.jpg
-small_image: assets/img/about-us-machine-mobile.jpg
+image: /assets/img/about-us-machine.jpg
+small_image: /assets/img/about-us-machine-mobile.jpg
 image_description: Paper Converting Machine
 introduction: 'A privately owned and independent limited company, M & L Paper are industry wholesale and retail paper converters.'
 blue_callout: "Founded in May 2005 after 30 years' experience in the paper industry, we pride ourselves on being family run with a dedicated workforce."
@@ -9,3 +9,4 @@ further_description: "We offer excellent customer service, high attention to det
 _template: cms
 _fieldset: generic_content
 ---
+
