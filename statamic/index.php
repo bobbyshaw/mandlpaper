@@ -1,7 +1,10 @@
 <?php
 
-error_reporting(E_ALL|E_STRICT);
-ini_set('display_errors', 'on');
+//error_reporting(E_ALL|E_STRICT);
+//ini_set('display_errors', 'on');
+
+// Disable errors in production
+error_reporting(0);
 
 /*
 |--------------------------------------------------------------------------
