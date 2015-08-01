@@ -1,5 +1,5 @@
 # When set to `true`, HTML caching will be enabled
-enable: false
+enable: true
 
 # How long should pages be cached for? set this to either:
 #   - a time value, like "10 minutes"
@@ -7,7 +7,7 @@ enable: false
 cache_length: on last modified
 
 # A pipe-separated list of URLs you want to exclude from HTML caching, ending-wildcards OK
-exclude: 
+exclude:
 
 # When `true`, different query strings in URLs will all result in the same page being shown,
 # for example /about and /about?something will all show the same page: /about
