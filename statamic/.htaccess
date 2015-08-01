@@ -1,13 +1,11 @@
 # Turn on the Rewrite Engine
 RewriteEngine On
 
-
 # ------------------------------------------------------------------------------
 # RewriteBase
 # ------------------------------------------------------------------------------
 # Ensure this matches your _site_root
 RewriteBase /mandlpaper/statamic/
-
 
 # ------------------------------------------------------------------------------
 # Protect System Files
@@ -50,6 +48,17 @@ RewriteCond %{HTTP_HOST} !^www\.
 RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
 # ------------------------------------------------------------------------------
+# Redirect old pages
+# ------------------------------------------------------------------------------
+Redirect 301 /product.html http://www.mandlpaper.co.uk/products-and-services
+Redirect 301 /about.html http://www.mandlpaper.co.uk/about-us
+
+Redirect 301 /maidstone.html http://www.mandlpaper.co.uk/contact
+Redirect 301 /medway.html http://www.mandlpaper.co.uk/contact
+Redirect 301 /directions.html http://www.mandlpaper.co.uk/contact
+Redirect 301 /london.html http://www.mandlpaper.co.uk/contact
+
+# ------------------------------------------------------------------------------
 # Enable GZIP Compression
 # ------------------------------------------------------------------------------
 AddOutputFilterByType DEFLATE text/plain
@@ -80,4 +89,3 @@ ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 </IfModule>
-
