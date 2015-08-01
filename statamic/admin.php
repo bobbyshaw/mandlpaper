@@ -1,5 +1,8 @@
 <?php
 
+// Disable errors in production
+error_reporting(0);
+
 /*
 |--------------------------------------------------------------------------
 | Statamic
