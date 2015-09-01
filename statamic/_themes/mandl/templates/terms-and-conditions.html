@@ -1,0 +1,18 @@
+<div class="cms cms-{{ title|lower|slugify }}">
+    <h1>{{ title }}</h1>
+
+    {{ introduction }}
+
+    <ul>
+        <li>
+            <a href="{{ terms }}">Terms and Conditions</a>
+        </li>
+        <li>
+            <a href="{{ privacy }}">Privacy Policy</a>
+        </li>
+    </ul>
+
+    {{ content }}
+</div>
+
+<img class="fullwidth" src="{{ small_image }}" srcset="{{ small_image }} 300w, {{ image }} 1000w" alt="{{ image_description }}" />
